@@ -1,5 +1,5 @@
 {
-  "name": "Mi_Portafolio",
+  "name": "mi_portafolio",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -22,5 +22,9 @@
     "@astrojs/deno": "^5.0.1",
     "atropos": "2.0.2",
     "moment": "^2.29.4"
-  }
+  },
+  "description": "Mi portafolio persona creado en Astro",
+  "main": "tailwind.config.js",
+  "author": "Lenin Mendoza",
+  "license": "ISC"
 }
