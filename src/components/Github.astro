@@ -1,0 +1,18 @@
+---
+import Card from "./Card.astro";
+import { ax } from "../service/api-github";
+
+const axios = await ax();
+---
+
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {axios.map((ax) => (
+        <Card
+            id={ax.id}
+            link={ax.html_url}
+            lenguajes={ax.language}
+            name_repo={ax.name}
+            descripcion={ax.description}
+        />
+    ))}
+</div>

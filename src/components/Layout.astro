@@ -6,17 +6,21 @@ import {
 	IconGithub,
 	IconLogo,
 	IconLogoDark,
-	IconUser,
+	IconCode,
 	IconHome,
 } from "../components/icons";
 import RoundIconButton from "./RoundIconButton.astro";
 import SquareIconLink from "./SquareIconLink.astro";
+import axios from "axios"
+
 
 export interface Props {
 	title: string;
 }
 
-const { title } = Astro.props as Props;
+const { title } = Astro.props as Props;   
+
+
 ---
 
 <!DOCTYPE html>
@@ -85,11 +89,11 @@ const { title } = Astro.props as Props;
 						<IconHome />
 					</SquareIconLink>
 					<SquareIconLink
-						title="Go to about me page"
+						title="Ir a portafolio"
 						target="_self"
-						href="/aboutme"
+						href="/porfolio"
 					>
-						<IconUser />
+						<IconCode />
 					</SquareIconLink>
 				</div>
 			</div>

@@ -3,7 +3,7 @@ import IconGithub from "./IconGithub.astro"
 import IconTwitter from "./IconTwitter.astro"
 import IconHome from "./IconHome.astro"
 import IconInstagram from "./IconInstagram.astro"
-import IconUser from "./IconUser.astro"
+import IconCode from "./IconCode.astro"
 import IconBlog from "./IconBlog.astro"
 import IconLogo from "./IconLogo.astro"
 import IconLogoDark from "./IconLogoDark.astro"
@@ -15,7 +15,7 @@ export {
   IconTwitter,
   IconHome,
   IconInstagram,
-  IconUser,
+  IconCode,
   IconBlog,
   IconMenu,
   IconLogo,

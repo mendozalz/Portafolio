@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --open",
-    "start": "astro dev",
+    "start": "astro dev --open",
     "build": "astro build",
     "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs"
   },
@@ -21,6 +21,7 @@
   "dependencies": {
     "@astrojs/deno": "^5.0.1",
     "atropos": "2.0.2",
+    "axios": "^1.5.1",
     "moment": "^2.29.4"
   },
   "description": "Mi portafolio persona creado en Astro",

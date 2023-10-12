@@ -1,0 +1,59 @@
+---
+interface Props{
+    id:number
+    link: string
+    lenguajes:string
+    name_repo:string
+    descripcion:string
+}
+
+const {id, link, lenguajes, name_repo, descripcion} = Astro.props
+
+const getLenguajesColor = (lenguajes) =>{
+  if (lenguajes === "JavaScript") {
+    return "bg-[yellow] text-black";
+  } else if (lenguajes === "TypeScript") {
+    return "bg-[#2F74C0] text-white";
+  } else if (lenguajes === "CSS") {
+    return "bg-[#0070B8] text-white";
+  } else if (lenguajes === "Vue") {
+    return "bg-[#3FB27F] text-white";
+  } else if (lenguajes === "HTML") {
+    return "bg-[#DD4B25] text-white";
+  } else if (lenguajes === "MDX") {
+    return "bg-[#F1A700] text-white";
+  } else if (lenguajes === "Astro") {
+    return "bg-[#691CCA] text-white";
+  } else {
+    return "hidden";
+  }
+}
+
+const lenguajesColor = getLenguajesColor(lenguajes);
+
+---
+
+<div
+      class="flex relative shadow-box-up dark:shadow-buttons-box-dark rounded-lg p-3 mb-3"
+      key={id}
+    >
+      <a class="absolute w-full h-full left-0" target="_black" href={link}></a>
+      <img
+        class="hidden lg:flex lg:w-15 lg:h-15 2xl:w-25 2xl:h-25 object-cover rounded-full"
+        src="https://i.ibb.co/W36HZCN/chucknorris.gif"
+        alt="img"
+      />
+      <div class="flex flex-col justify-around">
+        <h1 class="text-xxs 2xl:text-xs items-baseline font-bold capitalize text-light-blue-dark dark:text-dark-blue-light">
+          {name_repo}
+        </h1>
+
+        <p class:list={[
+            `text-4xs font-semibold lg:text-3xs dark:text-dark-blue-light py-0.5 px-2 mr-1 my-1 rounded-xl last-of-type:mr-0 shadow-box-up dark:shadow-buttons-box-dark h-min w-fit dark:bg-gradient-box-dark border dark:border-light-blue-light ${getLenguajesColor(lenguajes)}`
+          ]}
+        >
+        {lenguajes}
+        </p>
+
+      </div>
+    </div>
