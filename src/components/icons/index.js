@@ -8,6 +8,7 @@ import IconPortafolio from "./IconPortafolio.astro"
 import IconLogo from "./IconLogo.astro"
 import IconLogoDark from "./IconLogoDark.astro"
 import IconMenu from "./IconMenu.astro"
+import CV from "./CV.astro"
 
 export {
   IconSun,
@@ -19,5 +20,6 @@ export {
   IconPortafolio,
   IconMenu,
   IconLogo,
-  IconLogoDark
+  IconLogoDark,
+  CV
 }

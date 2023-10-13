@@ -127,3 +127,12 @@ html {
 #mendozalz, #Awesome-Profile-README-templates{
 	display: none;
 }
+
+/* Estilos a la imagen de los repos para que se adapte a movil*/
+
+@media screen and (max-width:768px){
+	img {
+		max-width: 35%;
+		height: auto;
+	}
+}
