@@ -8,8 +8,7 @@
   "scripts": {
     "dev": "astro dev --open",
     "start": "astro dev --open",
-    "build": "astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs"
+    "build": "astro build"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.0.1",
