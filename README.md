@@ -1,10 +1,13 @@
 # Portafolio Lenin Mendoza | MENDOZALZ
 
+
 Presentación de mi portafolio
 
 <p align="center">
   <img src="https://i.ibb.co/nPrWBw7/Bienvenido-a-mi-presentaci-n.gif" alt="Lección #7" />
 </p>
+
+[Ver portafolio en video](https://youtu.be/PTp7xXqHIq0)
 
 Ver en [Vercel](https://mendozalz.vercel.app/)
 
