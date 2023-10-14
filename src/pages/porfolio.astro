@@ -6,8 +6,17 @@ import Portafolio from "../components/Portafolio.astro";
 ---
 
 <Layout title="Mi portafolio">
-  <h1 class="text-right lg:text-left font-semibold text-light-blue-dark -mb-6 lg:mb-0">Mis trabajos más destacados</h1>
+  <h1 class="text-right lg:text-left font-semibold text-light-blue-dark -mb-4 lg:mb-0">Mis trabajos más destacados</h1>
   <Scroll>
-    <Portafolio/>
+    <Portafolio url="https://mlz-freefire.netlify.app/" title="Free Fire Card" description="Web Component en JS Vanilla de uso multiporposito alusivo a Free Fire" imagen="https://i.ibb.co/DVdq6ck/Free-Fire-Card.gif" tecnologias={["Web Component"]}/>
+
+    <Portafolio url="https://astro-tips.netlify.app/" title="Astro Build Tips" description="Proyecto del curso de Astro" imagen="https://i.ibb.co/nLxt0M9/astrobuild-tips.png" tecnologias={["Astro", "Tailwind", "JS"]}/>
+
+    <Portafolio url="https://marzipano.netlify.app/" title="Recorrido 360°" description="Demostración para implementación laboral de recorrido de las oficinas donde laboraba, por motivos privados solo hay imagenes referenciales." imagen="	https://github.com/mendozalz/Recorrido_360/raw/main/img/Project%20Title.gif" tecnologias={["HTML", "CSS", "JS", "Marzipano Framework"]}/>
+
+    <Portafolio url="https://gc-meet.netlify.app/" title="Angular Meet" description="Desarrollo Front end para un meet personalizado" imagen="https://raw.githubusercontent.com/mendozalz/GCMeet-Angular/main/src/img/GCMeetAngular.gif" tecnologias={["Angular 16", "Tailwind"]}/>
+
+    <Portafolio url="https://halo-infinity.vercel.app/" title="Halo Infinity" description="Practicas en HTML, CSS y JS con cambio entre light mode y dark mode. " imagen="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/07/halo-infinite-2005379.jpg?tf=3840x" tecnologias={["HTML", "CSS", "JS"]}/>
   </Scroll>
 </Layout>
+https://i.ibb.co/nLxt0M9/astrobuild-tips.png

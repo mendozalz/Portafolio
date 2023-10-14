@@ -137,3 +137,10 @@ html {
 	}
 
 }
+@media screen and (max-width:1000px){
+	img {
+		max-width: 35%;
+		height: auto;
+	}
+
+}
