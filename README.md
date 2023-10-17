@@ -7,6 +7,10 @@ Presentación de mi portafolio
   <img src="public\Bienvenido-a-mi-presentaci-n.gif" alt="Portafolio" />
 </p>
 
+<p align="center">
+  <img src="public\light_house.png" alt="Light House" />
+</p>
+
 [Ver portafolio en video](https://youtu.be/PTp7xXqHIq0)
 
 Ver en [Vercel](https://mendozalz.vercel.app/)

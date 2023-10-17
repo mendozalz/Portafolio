@@ -1,4 +1,5 @@
 ---
+import { SEOMetadata } from 'astro-seo-metadata';
 import '../styles/base.css'
 import { ViewTransitions } from 'astro:transitions';
 import Technologies from "./Technologies.astro";
@@ -30,10 +31,26 @@ const { title } = Astro.props as Props;
 	<head>
 		<GA4/>
 		<meta charset="UTF-8" />
-		<meta
-  name="description" content="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price: $17.99, Length: 784 pages">
 		<meta name="viewport" content="width=device-width" />
+		<meta property="og:type" content="website" />
+		<meta name="author" content="Lenin Mendoza" />
+		<meta name="copyright" content="ISC" />
 		<link rel="icon" sizes="16x16 32x32 48x48" type="image/x-icon" href="/favicon.ico" />
+		<link rel="sitemap" href="/.vercel/output/static/sitemap-index.xml" />
+		<link rel="canonical" href="https://mendozalz.vercel.app/"/>
+		<meta name="generator" content="Astro v3.2.3" />
+		<SEOMetadata
+    siteName={'Mi Portafolio personal'}
+    title={'Mi portafolio personal'}
+    description={'Autor - Lenin Mendoza - Desarrollador Web especializado en Wordpress desde el 2017 y formado desde inicios del 2023 a los frameworks de mas demanda'}
+    favicon={'/favicon.ico'}
+    author="Lenin Mendoza"
+    copyright="ISC"
+    astroSitemap={true}
+    canonicalUrl={Astro.url.toString()}
+    type={'website'}
+    astroGenerator={true}
+  />
 		<Clarity/>
 		<title>{title}</title>
 	</head>
@@ -47,7 +64,7 @@ const { title } = Astro.props as Props;
 			class="flex flex-col p-4 m-4 md:p-8 md:my-10 md:mx-12 lg:my-0 w-full lg:w-[calc(100vw_-_50%)] rounded-tr-2xl rounded-tl-lg rounded-b-lg bg-gradient-box-light shadow-sky-light dark:bg-box-dark dark:shadow-orange-dark min-h-[calc(100vh_-_80px)] lg:h-[calc(100vh_-_100px)] justify-between"
 		>
 			<div class="flex w-full relative mb-2 md:mb-4">
-				<a href="/" class="flex w-20 -top-2 sm:-top-2 sm:w-fit absolute">
+				<a href="/" class="flex w-20 -top-2 sm:-top-2 sm:w-fit absolute" aria-label="Icono de enlace al Home">
 					<IconLogo/>
 					<IconLogoDark/>
 				</a>
