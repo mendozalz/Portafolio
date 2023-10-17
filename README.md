@@ -4,7 +4,7 @@
 Presentación de mi portafolio
 
 <p align="center">
-  <img src="https://i.ibb.co/nPrWBw7/Bienvenido-a-mi-presentaci-n.gif" alt="Lección #7" />
+  <img src="public\Bienvenido-a-mi-presentaci-n.gif" alt="Portafolio" />
 </p>
 
 [Ver portafolio en video](https://youtu.be/PTp7xXqHIq0)
