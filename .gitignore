@@ -1,6 +1,8 @@
 # build output
 dist/
 .output/
+src/components/Hotjar.astro
+src/components/GA4.astro
 
 # dependencies
 node_modules/

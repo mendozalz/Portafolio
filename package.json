@@ -19,8 +19,10 @@
   },
   "dependencies": {
     "@astrojs/partytown": "^2.0.1",
+    "@astrojs/react": "^3.0.3",
     "@astrojs/sitemap": "^3.0.1",
     "@astrojs/vercel": "^5.0.2",
+    "@clickvote/react": "^0.0.8",
     "astro-seo-metadata": "^0.6.0",
     "atropos": "2.0.2",
     "axios": "^1.5.1",
