@@ -1,15 +1,15 @@
 ---
-interface Props{
-    id:number
-    link: string
-    lenguajes:string
-    name_repo:string
-    descripcion:string
+interface Props {
+  id: number;
+  link: string;
+  lenguajes: string;
+  name_repo: string;
+  descripcion: string;
 }
 
-const {id, link, lenguajes, name_repo, descripcion} = Astro.props
+const { id, link, lenguajes, name_repo, descripcion } = Astro.props;
 
-const getLenguajesColor = (lenguajes) =>{
+const getLenguajesColor = (lenguajes) => {
   if (lenguajes === "JavaScript") {
     return "bg-[yellow] text-black";
   } else if (lenguajes === "TypeScript") {
@@ -26,38 +26,43 @@ const getLenguajesColor = (lenguajes) =>{
     return "bg-[#691CCA] text-white";
   } else if (lenguajes === "PHP") {
     return "bg-[#7A86B8] text-white";
-  }else if (lenguajes === "Python") {
+  } else if (lenguajes === "Python") {
     return "bg-[#ffe15f] text-white";
+  } else if (lenguajes === "C#") {
+    return "bg-[#178600] text-white";
   } else {
     return "hidden";
   }
-}
+};
 
 const lenguajesColor = getLenguajesColor(lenguajes);
-
 ---
 
 <div
-      class="flex relative shadow-box-up dark:shadow-buttons-box-dark rounded-lg p-3 mb-3"
-       id={name_repo}
+  class="flex relative shadow-box-up dark:shadow-buttons-box-dark rounded-lg p-3 mb-3"
+  id={name_repo}
+>
+  <a class="absolute w-full h-full left-0" target="_black" href={link}></a>
+  <img
+    class="lg:flex lg:w-10 lg:h-10 2xl:w-20 2xl:h-20 object-cover rounded-full"
+    src="https://octodex.github.com/images/daftpunktocat-guy.gif"
+    alt="img"
+  />
+  <div class="flex flex-col justify-around">
+    <h1
+      class="text-xxs 2xl:text-xs items-baseline font-bold capitalize text-light-blue-dark dark:text-dark-blue-light break-all"
     >
-      <a class="absolute w-full h-full left-0" target="_black" href={link}></a>
-      <img
-        class="lg:flex lg:w-10 lg:h-10 2xl:w-20 2xl:h-20 object-cover rounded-full"
-        src="https://octodex.github.com/images/daftpunktocat-guy.gif"
-        alt="img"
-      />
-      <div class="flex flex-col justify-around">
-        <h1 class="text-xxs 2xl:text-xs items-baseline font-bold capitalize text-light-blue-dark dark:text-dark-blue-light break-all">
-          {name_repo}
-        </h1>
+      {name_repo}
+    </h1>
 
-        <p class:list={[
-            `text-4xs font-semibold lg:text-3xs dark:text-dark-blue-light py-0.5 px-2 mr-1 my-1 rounded-xl last-of-type:mr-0 shadow-box-up dark:shadow-buttons-box-dark h-min w-fit dark:bg-gradient-box-dark border dark:border-light-blue-light ${getLenguajesColor(lenguajes)}`
-          ]}
-        >
-        {lenguajes}
-        </p>
-
-      </div>
-    </div>
+    <p
+      class:list={[
+        `text-4xs font-semibold lg:text-3xs dark:text-dark-blue-light py-0.5 px-2 mr-1 my-1 rounded-xl last-of-type:mr-0 shadow-box-up dark:shadow-buttons-box-dark h-min w-fit dark:bg-gradient-box-dark border dark:border-light-blue-light ${getLenguajesColor(
+          lenguajes
+        )}`,
+      ]}
+    >
+      {lenguajes}
+    </p>
+  </div>
+</div>
