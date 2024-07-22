@@ -12,22 +12,22 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.4.8",
-    "autoprefixer": "^10.4.18",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
+    "astro": "^4.12.2",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6"
   },
   "dependencies": {
-    "@astrojs/partytown": "^2.0.4",
-    "@astrojs/react": "^3.0.10",
-    "@astrojs/sitemap": "^3.1.1",
-    "@astrojs/vercel": "^7.3.4",
+    "@astrojs/partytown": "^2.1.1",
+    "@astrojs/react": "^3.6.0",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/vercel": "^7.7.2",
     "@clickvote/react": "^0.0.8",
     "astro-seo-metadata": "^0.6.0",
     "atropos": "2.0.2",
-    "axios": "^1.6.7",
+    "axios": "^1.7.2",
     "moment": "^2.30.1",
-    "npm-check-updates": "^16.14.15"
+    "npm-check-updates": "^16.14.20"
   },
   "description": "Mi portafolio personal creado en Astro",
   "main": "tailwind.config.js",
